@@ -8,7 +8,7 @@ class WebFetcher():
     def test(self, txt):
         print txt
 
-    def getSite(url):
+    def getSite(self, url):
         #input url
         #output .txt of site code
         connection = urllib.urlopen(url)
@@ -53,6 +53,10 @@ class WebFetcher():
         print("links...................")
         print(links)
         return links
+
+    def parseLinks(self, txt):
+        #take output of getLinks.
+        #output 2x2 array of each search response split into different categories.
 
     def removeHTML(txt):
         #input string of website source code
